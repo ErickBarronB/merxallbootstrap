@@ -10,4 +10,17 @@
   border-radius: 1000px;
 }
 
+section {
+  height: 500px;
+  width: 100%;
+  background-color: rgb(74, 72, 72);
+  color: rgb(192, 42, 42);
+  text-align: center;
+}
+section article {
+  height: 200px;
+  background-color: skyblue;
+  font-size: 34px;
+}
+
 /*# sourceMappingURL=indexestilo.css.map */
