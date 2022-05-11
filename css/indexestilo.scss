@@ -1,5 +1,6 @@
 
-
+$colorAzulArticle: blue;
+$colorBorde: red;
 
 
 * {
@@ -18,7 +19,7 @@
 }
 
 section {
-    height: 500px;
+    height: 400px;
     width: 100%;
     background-color: rgb(74, 72, 72);
     color: rgb(192, 42, 42);
@@ -26,9 +27,47 @@ section {
     
     article{
         height: 200px;
-        background-color: skyblue;
+        background-color: $colorAzulArticle;
         font-size: 34px;
 
-
+        p {
+            color: black;
+        }
+        
     }
 }
+
+
+$colors: (
+rojo: red,
+verde: green,
+azul: blue,
+amarillo: yellow,
+);
+
+@each $name, $color in $colors {
+  .#{$name} {
+    color: $color;
+  }
+}
+
+@mixin colores ($color, $bcolor, $bordercolor, $borderrad)
+{
+    color: $color;
+    background-color: $bcolor;
+    border-color: $bordercolor;
+    border-radius: $borderrad;
+}
+
+.boxs {
+    @include colores(yellow, rgb(30, 35, 37), green, 5px);
+    border-style: dashed;
+}
+    
+
+.merxall {
+    @extend .boxs;
+    border-color: map-get($colors, verde);
+    border-style: solid;
+}
+
