@@ -22,7 +22,7 @@
 
     <nav class="navbar navbar-expand-md navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">MERXALL</a>
+          <a class="navbar-brand" href="#">ALIS │ MERXALL</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -39,40 +39,112 @@
       </nav>
 
       <!--CONTENEDOR DE TARJETAS DE CONTACTO-->
-      <div class="container-fluid bg-dark">
-          <div class="row">
-              <div class="col-md-12 d-flex" style="flex-direction: column; justify-content: center;">
-                  <h5 class="text-light text-center" style="margin-top: 15px;"">CONTACTOS</h5>
-                  <div class="container-fluid text-center d-flex" style="margin-top: 150px; margin-bottom: 25px; justify-content: space-evenly;">
-                   
-                   
-                    <div class="card offset-1" style="width: 18rem;">
-                      <img class="card-img-top" src="../imagenes/PROFILE.jpg" alt="Card image cap">
-                      <div class="card-body">
-                        <h5 class="card-title">Mauricio B.</h5>
-                        <p class="card-text">Tel: ---------- <br> Email: ------------ <br> <b> Gerente General </b></p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                      </div>
-                    </div>
-                    <div class="card" style="width: 18rem;">
-                      <img class="card-img-top" src="../imagenes/PROFILE.jpg" alt="Card image cap">
-                      <div class="card-body">
-                        <h5 class="card-title">Mariano M.</h5>
-                        <p class="card-text">Tel: ---------- <br> Email: ------------ <br> <b> Gerente General </p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                      </div>
-                    </div>
-                    </div>
-                    
-                  </div>
-                  
-              </div>
-          </div>
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="card-group d-flex align-items-center justify-content-center" style=" width: 500px; margin-top: 10px;">
 
+            <div class="card" style="width: 18rem;">
+              <img src="../imagenes/PROFILE.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center">Mariano M.</h5>
+                <p class="card-text ">Tel: 2992340976</p>
+                <p class="card-text">Email: -----------</p>
+              
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <img src="../imagenes/PROFILE.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center">Mauricio B.</h5>
+                <p class="card-text">Tel: 2994102344</p>
+                <p class="card-text">Email: -----------</p>
+                
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid bg-light">
+        <section class="mb-4">
+
+          <!--Section heading-->
+          <h2 class="h1-responsive font-weight-bold text-center my-4">Contáctanos</h2>
+          <!--Section description-->
+          <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+              a matter of hours to help you.</p>
+      
+          <div class="row justify-content-center">
+      
+              <!--Grid column-->
+              <div class="col-md-8 mb-md-0 mb-5">
+                  <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+      
+
+                      <div class="row">
+      
+                          <!--Grid column-->
+                          <div class="col-md-6">
+                              <div class="md-form mb-0">
+                                <label for="name" class="">NOMBRE</label>
+                                  <input type="text" id="name" name="name" class="form-control">
+                                  
+                              </div>
+                          </div>
+
+                          <div class="col-md-6">
+                              <div class="md-form mb-0">
+                                <label for="email" class="">E-MAIL</label>
+                                  <input type="text" id="email" name="email" class="form-control">
+                                  
+                              </div>
+                          </div>
+
+      
+                      </div>
+
+                      <div class="row">
+                          <div class="col-md-12">
+                              <div class="md-form mb-0">
+                                <label for="subject" class="">SUJETO</label>
+                                  <input type="text" id="subject" name="subject" class="form-control">
+                                  
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="row">
+      
+
+                          <div class="col-md-12">
+      
+                              <div class="md-form">
+                                <label for="message">MENSAJE</label>
+                                  <textarea type="text" id="message" name="message" rows="8" class="form-control md-textarea"></textarea>
+                                  
+                              </div>
+      
+                          </div>
+                      </div>
+                      <!--Grid row-->
+      
+                  </form>
+      
+                  <div class="text-center text-md-left" style="margin-top: 10px; margin-bottom: 20px;">
+                      <a class="btn btn-primary" onclick=";">Enviar</a>
+                  </div>
+                  <div class="status"></div>
+              </div>
+
+          </div>
+      
+      </section>
       </div>
 
         <!-- Footer -->
-<footer class="bg-light text-center fixed-bottom">
+<footer class="bg-light text-center">
 
 
     <!-- Copyright -->
