@@ -16,6 +16,7 @@ $colorBorde: red;
     width: 400px;
     border: 1px solid rgb(0, 0, 0);
     border-radius: 1000px;
+    margin-top: 50px;
 }
 
 section {
@@ -71,3 +72,149 @@ amarillo: yellow,
     border-style: solid;
 }
 
+.indexLogoTexto {
+    margin-bottom: 50px; 
+    margin-top: 20px;
+    font-size: 50px;
+}
+
+.indexCardDeck {
+    justify-content: space-around;
+}
+
+
+#indexCardDeck {
+    justify-content: space-around;
+}
+
+.indexCardDeckRow {
+    justify-content: space-around;
+}
+
+
+.indexCard01 {
+    width: 18rem;
+}
+
+.indexCard02 {
+    width: 18rem;
+}
+
+.indexCard03 {
+    width: 16.5rem;
+}
+
+.indexCard01titulo {
+    height: 29px;
+}
+
+.indexCard02titulo {
+    height: 29px;
+}
+
+.indexCard03titulo {
+    height: 23px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #imagenLogo {
+        height: 200px;
+        width: 200px;
+    }
+
+    .indexCardDeck {
+
+        align-items:center;
+        justify-content: space-between;
+        margin-left: 12%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .indexCardDeckRow {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .indexCard03 {
+        width: 18rem;
+    }
+
+    .ubicacionMapaIframeSrc {
+        height: 400px;
+    }
+
+}
+
+.Footer {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.ubicacionMapaTexto {
+    margin-top: 15px;
+}
+
+.ubicacionMapaIframe {
+    margin-top: 25px; 
+    margin-bottom: 25px;
+    border:0;
+
+}
+
+.proyectoContenedor {
+    flex-direction: column; 
+    justify-content: center;
+}
+
+.proyectoCard {
+    width: 18rem; 
+    margin-bottom: 5px
+}
+
+
+.proyectoCardDeck {
+    margin-top: 150px; 
+    margin-bottom: 25px; 
+    justify-content: space-evenly; 
+    flex-wrap: wrap;
+}
+.proyectoTextoTitulo {
+    margin-top: 15px; 
+    font-size: 45px;
+}
+
+.proyectoTextoEncarga {
+    font-size: 30px;
+}
+
+.faqListaContenedor {
+    flex-direction: column; 
+    justify-content: center;
+}
+
+.faqListaTitulo {
+    margin-top: 15px;
+}
+
+.faqListaItems {
+    margin-top: 20px; 
+    margin-bottom: 25px; 
+    justify-content: space-evenly; 
+    flex-wrap: wrap;
+}
+
+.contacto1FormBotonEnviar {
+    margin-top: 10px; 
+    margin-bottom: 20px;
+}
+
+.contacto1CardDeck {
+    width: 500px; 
+    margin-top: 10px;
+}
+
+.contacto1Card01 {
+    width: 18rem;
+}
