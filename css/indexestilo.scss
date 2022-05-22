@@ -1,7 +1,4 @@
 
-$colorAzulArticle: blue;
-$colorBorde: red;
-
 
 * {
     margin: 0;
@@ -18,18 +15,6 @@ $colorBorde: red;
     margin-top: 50px;
 }
 
-    article{
-        height: 200px;
-        background-color: $colorAzulArticle;
-        font-size: 34px;
-
-        p {
-            color: black;
-        }
-        
-    }
-
-
 
 $colors: (
 rojo: red,
@@ -39,9 +24,9 @@ amarillo: yellow,
 );
 
 @each $name, $color in $colors {
-  .#{$name} {
+.#{$name} {
     color: $color;
-  }
+}
 }
 
 body {
