@@ -10,7 +10,6 @@ $colorBorde: red;
 
 
 
-
 #imagenLogo {
     height: 400px;
     width: 400px;
@@ -45,12 +44,38 @@ amarillo: yellow,
   }
 }
 
+body {
+    background-color: rgb(247, 247, 247);
+}
+
+.bodyUbicacion {
+    background-color: rgb(30, 30, 30,);
+}
+
+
 @mixin colores ($color, $bcolor, $bordercolor, $borderrad)
 {
     color: $color;
     background-color: $bcolor;
     border-color: $bordercolor;
     border-radius: $borderrad;
+}
+
+.navbarTextoColor {
+    background-color: rgb(247, 247, 247);
+
+}
+
+
+
+.navbarTextoColor a, .navbarTextoColor a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.mapaContenedorFondo {
+    background-color: rgb(30, 30, 30)
+
 }
 
 .boxs {
@@ -65,14 +90,60 @@ amarillo: yellow,
     border-style: solid;
 }
 
+.mainLogoColorFondo {
+    background-color: rgb(30, 30, 30);
+    
+    h3 {
+        color: white;
+    }
+}
+
+
+.boton, .boton:hover {
+    background-color: rgb(30, 30, 30,);
+    padding: 10px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: rgb(30, 30, 30,);
+    text-decoration: none;
+    color: white;
+    
+    
+}
+
+.botonForm, .botonForm:hover {
+    background-color: rgb(30, 30, 30,);
+    padding: 10px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: rgb(30, 30, 30,);
+    text-decoration: none;
+    color: white;
+    margin-top: 5px;
+    
+}
+
+
+
+
+
+
+
 .indexLogoTexto {
     margin-bottom: 50px; 
     margin-top: 20px;
     font-size: 50px;
 }
 
+
+.indexCardTexto {
+    text-align: center;
+}
+
 .indexCardDeck {
     justify-content: space-around;
+    display: flex;
+    text-align: center;
 }
 
 
@@ -95,14 +166,20 @@ amarillo: yellow,
 
 .indexCard01titulo {
     height: 29px;
+    font-weight: 700;
+    text-align: center;
 }
 
 .indexCard02titulo {
     height: 29px;
+    font-weight: 700;
+    text-align: center;
 }
 
 .indexCard03titulo {
     height: 23px;
+    font-weight: 700;
+    text-align: center;
 }
 
 @media only screen and (max-width: 600px) {
@@ -138,23 +215,33 @@ amarillo: yellow,
 }
 
 .Footer {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgb(184, 184, 184);
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
 }
 
 .ubicacionMapaTexto {
     margin-top: 15px;
+    color: white;
+    text-align: center;
 }
 
 .ubicacionMapaIframe {
     margin-top: 25px; 
     margin-bottom: 25px;
     border:0;
+    justify-content: center;
+    display: flex;
 
 }
 
 .proyectoContenedor {
     flex-direction: column; 
     justify-content: center;
+    display: flex;
 }
 
 .proyectoCard {
@@ -163,28 +250,42 @@ amarillo: yellow,
 }
 
 
+.proyectoContenedorPadre {
+    background-color: rgb(30, 30, 30);
+}
+
 .proyectoCardDeck {
     margin-top: 150px; 
     margin-bottom: 25px; 
     justify-content: space-evenly; 
     flex-wrap: wrap;
+    display: flex;
+    text-align: center;
 }
 .proyectoTextoTitulo {
     margin-top: 15px; 
     font-size: 45px;
+    color: white;
+    text-align: center;
+
 }
 
 .proyectoTextoEncarga {
     font-size: 30px;
+    text-align: center;
+    color: white;
 }
 
 .faqListaContenedor {
     flex-direction: column; 
     justify-content: center;
+    display: flex;
 }
 
 .faqListaTitulo {
     margin-top: 15px;
+    text-align: center;
+    color: white;
 }
 
 .faqListaItems {
@@ -192,6 +293,8 @@ amarillo: yellow,
     margin-bottom: 25px; 
     justify-content: space-evenly; 
     flex-wrap: wrap;
+    display: flex;
+    text-align: center;
 }
 
 .contacto1FormBotonEnviar {
@@ -206,4 +309,67 @@ amarillo: yellow,
 
 .contacto1Card01 {
     width: 18rem;
+}
+
+.contactoCardDeck {
+    width: 500px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: ;
+}
+
+.mainLogoColorFondoDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+contactoCard01 {
+    width: 18rem;
+}
+
+.contactoCardDeckContenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(30, 30, 30);
+}
+
+.contactoCard01Titulo {
+    text-align: center;
+    font-weight: 500;
+}
+
+.contactoCard01Texto {
+    text-align: center;
+}
+
+.FormTitulo {
+    text-align: center;
+}
+
+.FormTexto {
+    text-align: center;
+}
+
+.botonFormPos {
+    margin-top: 20px; 
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.faqListaContenedorPadre {
+    background-color: rgb(30, 30, 30);
+}
+
+
+footer {
+    text-align: center;
+}
+
+.contactoCardDeckContenedorPadre {
+    background-color: rgb(30, 30, 30,);
 }

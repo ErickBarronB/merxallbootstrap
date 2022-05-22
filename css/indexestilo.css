@@ -36,6 +36,27 @@ article p {
   color: yellow;
 }
 
+body {
+  background-color: rgb(247, 247, 247);
+}
+
+.bodyUbicacion {
+  background-color: rgb(30, 30, 30);
+}
+
+.navbarTextoColor {
+  background-color: rgb(247, 247, 247);
+}
+
+.navbarTextoColor a, .navbarTextoColor a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.mapaContenedorFondo {
+  background-color: rgb(30, 30, 30);
+}
+
 .boxs, .merxall {
   color: yellow;
   background-color: rgb(30, 35, 37);
@@ -49,14 +70,48 @@ article p {
   border-style: solid;
 }
 
+.mainLogoColorFondo {
+  background-color: rgb(30, 30, 30);
+}
+.mainLogoColorFondo h3 {
+  color: white;
+}
+
+.boton, .boton:hover {
+  background-color: rgb(30, 30, 30);
+  padding: 10px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: rgb(30, 30, 30);
+  text-decoration: none;
+  color: white;
+}
+
+.botonForm, .botonForm:hover {
+  background-color: rgb(30, 30, 30);
+  padding: 10px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: rgb(30, 30, 30);
+  text-decoration: none;
+  color: white;
+  margin-top: 5px;
+}
+
 .indexLogoTexto {
   margin-bottom: 50px;
   margin-top: 20px;
   font-size: 50px;
 }
 
+.indexCardTexto {
+  text-align: center;
+}
+
 .indexCardDeck {
   justify-content: space-around;
+  display: flex;
+  text-align: center;
 }
 
 .indexCardDeckRow {
@@ -77,14 +132,20 @@ article p {
 
 .indexCard01titulo {
   height: 29px;
+  font-weight: 700;
+  text-align: center;
 }
 
 .indexCard02titulo {
   height: 29px;
+  font-weight: 700;
+  text-align: center;
 }
 
 .indexCard03titulo {
   height: 23px;
+  font-weight: 700;
+  text-align: center;
 }
 
 @media only screen and (max-width: 600px) {
@@ -116,22 +177,31 @@ article p {
   }
 }
 .Footer {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgb(184, 184, 184);
+}
+.Footer a {
+  text-decoration: none;
+  color: black;
 }
 
 .ubicacionMapaTexto {
   margin-top: 15px;
+  color: white;
+  text-align: center;
 }
 
 .ubicacionMapaIframe {
   margin-top: 25px;
   margin-bottom: 25px;
   border: 0;
+  justify-content: center;
+  display: flex;
 }
 
 .proyectoContenedor {
   flex-direction: column;
   justify-content: center;
+  display: flex;
 }
 
 .proyectoCard {
@@ -139,29 +209,42 @@ article p {
   margin-bottom: 5px;
 }
 
+.proyectoContenedorPadre {
+  background-color: rgb(30, 30, 30);
+}
+
 .proyectoCardDeck {
   margin-top: 150px;
   margin-bottom: 25px;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  display: flex;
+  text-align: center;
 }
 
 .proyectoTextoTitulo {
   margin-top: 15px;
   font-size: 45px;
+  color: white;
+  text-align: center;
 }
 
 .proyectoTextoEncarga {
   font-size: 30px;
+  text-align: center;
+  color: white;
 }
 
 .faqListaContenedor {
   flex-direction: column;
   justify-content: center;
+  display: flex;
 }
 
 .faqListaTitulo {
   margin-top: 15px;
+  text-align: center;
+  color: white;
 }
 
 .faqListaItems {
@@ -169,6 +252,8 @@ article p {
   margin-bottom: 25px;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  display: flex;
+  text-align: center;
 }
 
 .contacto1FormBotonEnviar {
@@ -183,4 +268,66 @@ article p {
 
 .contacto1Card01 {
   width: 18rem;
+}
+
+.contactoCardDeck {
+  width: 500px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rg;
+}
+
+.mainLogoColorFondoDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+contactoCard01 {
+  width: 18rem;
+}
+
+.contactoCardDeckContenedor {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgb(30, 30, 30);
+}
+
+.contactoCard01Titulo {
+  text-align: center;
+  font-weight: 500;
+}
+
+.contactoCard01Texto {
+  text-align: center;
+}
+
+.FormTitulo {
+  text-align: center;
+}
+
+.FormTexto {
+  text-align: center;
+}
+
+.botonFormPos {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.faqListaContenedorPadre {
+  background-color: rgb(30, 30, 30);
+}
+
+footer {
+  text-align: center;
+}
+
+.contactoCardDeckContenedorPadre {
+  background-color: rgb(30, 30, 30);
 }/*# sourceMappingURL=indexestilo.css.map */
