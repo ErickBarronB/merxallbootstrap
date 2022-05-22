@@ -11,19 +11,12 @@
   margin-top: 50px;
 }
 
-section {
-  height: 400px;
-  width: 100%;
-  background-color: rgb(74, 72, 72);
-  color: rgb(192, 42, 42);
-  text-align: center;
-}
-section article {
+article {
   height: 200px;
   background-color: blue;
   font-size: 34px;
 }
-section article p {
+article p {
   color: black;
 }
 
@@ -66,12 +59,8 @@ section article p {
   justify-content: space-around;
 }
 
-#indexCardDeck {
-  justify-content: space-around;
-}
-
 .indexCardDeckRow {
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .indexCard01 {
@@ -107,7 +96,7 @@ section article p {
   .indexCardDeck {
     align-items: center;
     justify-content: space-between;
-    margin-left: 12%;
+    margin-left: 18%;
     display: flex;
     flex-direction: column;
   }
