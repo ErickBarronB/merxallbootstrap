@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+P {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
 #imagenLogo {
   height: 400px;
   width: 400px;
@@ -63,6 +67,7 @@ body {
 
 .mainLogoColorFondo {
   background-color: rgb(30, 30, 30);
+  background-image: url(/imagenes/bg.jpg);
 }
 .mainLogoColorFondo h3 {
   color: white;
@@ -76,6 +81,9 @@ body {
   border-color: rgb(30, 30, 30);
   text-decoration: none;
   color: white;
+  text-align: center;
+  justify-content: center;
+  width: 200px;
 }
 
 .botonForm, .botonForm:hover {
@@ -93,6 +101,12 @@ body {
   margin-bottom: 50px;
   margin-top: 20px;
   font-size: 50px;
+  text-align: center;
+}
+.indexLogoTexto p {
+  font-size: 25px;
+  margin-top: 10px;
+  color: rgb(192, 189, 189);
 }
 
 .indexCardTexto {
@@ -101,8 +115,10 @@ body {
 
 .indexCardDeck {
   justify-content: space-around;
-  display: flex;
+  display: none;
   text-align: center;
+  background-color: rgb(30, 30, 30);
+  margin: 0px;
 }
 
 .indexCardDeckRow {
@@ -111,14 +127,20 @@ body {
 
 .indexCard01 {
   width: 18rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .indexCard02 {
   width: 18rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .indexCard03 {
   width: 16.5rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .indexCard01titulo {
@@ -148,19 +170,28 @@ body {
   .indexCardDeck {
     align-items: center;
     justify-content: space-between;
-    margin-left: 18%;
     display: flex;
     flex-direction: column;
+    background-color: rgb(30, 30, 30);
+    margin-top: 180px;
   }
 
-  .indexCardDeckRow {
+  #indexCardDeckRow {
     justify-content: center;
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   .indexCard03 {
     width: 18rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .indexCard01 {
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   .ubicacionMapaIframeSrc {
@@ -198,6 +229,8 @@ body {
 .proyectoCard {
   width: 18rem;
   margin-bottom: 5px;
+  border: 30px solid white;
+  border-radius: 40px;
 }
 
 .proyectoContenedorPadre {
@@ -211,6 +244,11 @@ body {
   flex-wrap: wrap;
   display: flex;
   text-align: center;
+  border: 10px solid white;
+  padding: 20px;
+  border-radius: 40px;
+  background-image: url(/imagenes/pexels-pixabay-236748.jpg);
+  background-size: cover;
 }
 
 .proyectoTextoTitulo {
@@ -262,11 +300,12 @@ body {
 }
 
 .contactoCardDeck {
-  width: 500px;
-  margin-top: 10px;
+  width: 602px;
+  margin-top: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 20px;
 }
 
 .mainLogoColorFondoDiv {
@@ -276,8 +315,12 @@ body {
   align-items: center;
 }
 
-contactoCard01 {
+.contactoCard01 {
   width: 18rem;
+}
+.contactoCard01 img {
+  height: 220px;
+  width: 600px;
 }
 
 .contactoCardDeckContenedor {
@@ -285,6 +328,7 @@ contactoCard01 {
   flex-direction: row;
   justify-content: center;
   background-color: rgb(30, 30, 30);
+  margin-bottom: 20px;
 }
 
 .contactoCard01Titulo {
@@ -320,4 +364,318 @@ footer {
 
 .contactoCardDeckContenedorPadre {
   background-color: rgb(30, 30, 30);
+}
+
+.indexArticulo1 {
+  background-color: rgb(247, 247, 247);
+  display: flex;
+  flex-direction: row;
+  height: 500px;
+}
+.indexArticulo1 h1 {
+  font-size: 80px;
+  margin-left: 40px;
+}
+
+.faqArticulo1 {
+  background-color: rgb(247, 247, 247);
+  display: flex;
+  flex-direction: row;
+  height: 500px;
+}
+.faqArticulo1 h1 {
+  font-size: 80px;
+  margin-left: 40px;
+}
+
+#faqImagen {
+  margin-left: -12px;
+  height: 500px;
+  width: 650px;
+}
+
+.indexArticulo1Texto {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  -webkit-animation: entraIzquierda 0.8s normal 0s;
+          animation: entraIzquierda 0.8s normal 0s;
+}
+
+#imagenIndex {
+  margin-left: -12px;
+  height: 500px;
+  width: 650px;
+}
+
+#recycleFaq {
+  height: 100px;
+  width: 100px;
+}
+
+.faq1Texto {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  -webkit-animation: entraIzquierda 0.8s normal 0s;
+          animation: entraIzquierda 0.8s normal 0s;
+  margin-left: 75px;
+}
+
+.faq1TextoMobile {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .faqArticulo1 {
+    background-color: rgb(247, 247, 247);
+    margin-bottom: px;
+    display: flex;
+    flex-direction: column;
+    padding: -12px;
+  }
+  .faqArticulo1 h1 {
+    font-size: 44px;
+  }
+
+  #faqImagen {
+    height: 300px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0px;
+    margin-top: 20px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+  }
+
+  .faq1Texto {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    -webkit-animation: entraIzquierda 0.8s normal 0s;
+            animation: entraIzquierda 0.8s normal 0s;
+    margin-left: -20px;
+  }
+  .faq1Texto h1 {
+    font-size: 20px;
+  }
+
+  .indexArticulo1 {
+    background-color: rgb(247, 247, 247);
+    margin-bottom: -160px;
+    display: flex;
+    flex-direction: column;
+  }
+  .indexArticulo1 h1 {
+    font-size: 44px;
+  }
+
+  #imagenIndex {
+    height: 300px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0px;
+    margin-top: 20px;
+    border-radius: 20px;
+  }
+
+  .indexArticulo1Texto {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    -webkit-animation: entraIzquierda 0.8s normal 0s;
+            animation: entraIzquierda 0.8s normal 0s;
+  }
+
+  .indexFlipCardContenedor {
+    display: none;
+    visibility: hidden;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(30, 30, 30);
+    padding: 0px;
+    flex-direction: column;
+    height: 0px;
+  }
+}
+@-webkit-keyframes entraDerecha {
+  0% {
+    transform: translate(-1000%, 0%);
+  }
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+@keyframes entraDerecha {
+  0% {
+    transform: translate(-1000%, 0%);
+  }
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+.indexFlipCardContenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(30, 30, 30);
+}
+
+.flipCard1, .flipCard2, .flipCard3 {
+  -webkit-animation: entraDerecha 0.6s normal 0s;
+          animation: entraDerecha 0.6s normal 0s;
+  margin: 20px;
+}
+
+@-webkit-keyframes entraIzquierda {
+  0% {
+    transform: translate(1000%, 0%);
+  }
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+
+@keyframes entraIzquierda {
+  0% {
+    transform: translate(1000%, 0%);
+  }
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 250px;
+  border: 0px solid rgb(247, 247, 247);
+  perspective: 1000px;
+  border-radius: 5px;
+}
+
+.flip-card-contenido {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-contenido {
+  transform: rotateY(180deg);
+}
+
+.flip-card-frente, .flip-card-atras {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-atras {
+  background-color: rgb(247, 247, 247);
+  border: 1px solid;
+  border-radius: 40px;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.flipCardImagen {
+  width: 100%;
+  height: 100%;
+  border: 1px solid;
+  border-radius: 40px;
+}
+
+.ubicacionDir {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.mapaContenedorFondo {
+  color: rec;
+  -webkit-animation: abajo 0.5s normal 1;
+          animation: abajo 0.5s normal 1;
+}
+
+@-webkit-keyframes abajo {
+  0% {
+    transform: translateY(-1000%, 0);
+  }
+  100% {
+    transform: translateY(0%, 0);
+  }
+}
+
+@keyframes abajo {
+  0% {
+    transform: translateY(-1000%, 0);
+  }
+  100% {
+    transform: translateY(0%, 0);
+  }
+}
+#proyectoBaldeTag {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+#proyectoBaldeTag img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1100px;
+  height: 470px;
+}
+
+#baldeTag {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 800px) {
+  #proyectoBaldeTag img {
+    width: 100vw;
+    height: 280px;
+  }
+}
+#alisLogo {
+  width: 500px;
+  margin-top: 40px;
+  border: 10px solid white;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  #alisLogo {
+    width: 205px;
+    margin-top: 20px;
+    border: 5px solid white;
+    border-radius: 5px;
+  }
+}
+.flipCardAtras {
+  align-items: center;
+}
+
+#alisContacto {
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=indexestilo.css.map */
