@@ -8,8 +8,8 @@ P {
 }
 
 #imagenLogo {
-  height: 400px;
-  width: 400px;
+  height: 120px;
+  width: 120px;
   border: 1px solid rgb(0, 0, 0);
   border-radius: 1000px;
   margin-top: 50px;
@@ -164,8 +164,8 @@ body {
 
 @media only screen and (max-width: 600px) {
   #imagenLogo {
-    height: 200px;
-    width: 200px;
+    height: 120px;
+    width: 120px;
   }
 
   .indexCardDeck {
@@ -248,7 +248,8 @@ body {
   border: 10px solid white;
   padding: 20px;
   border-radius: 40px;
-  background-image: url(/imagenes/pexels-pixabay-236748.jpg);
+  background-image: url(/imagenes/fondoprod.jpeg);
+  background-position-y: 1550px;
   background-size: cover;
 }
 
@@ -499,6 +500,11 @@ footer {
     -webkit-animation: entraIzquierda 0.8s normal 0s;
             animation: entraIzquierda 0.8s normal 0s;
   }
+  .indexArticulo1Texto h1 {
+    font-size: 30px;
+    margin-top: 40px;
+    margin-right: 20px;
+  }
 
   .indexFlipCardContenedor {
     display: none;
@@ -672,7 +678,7 @@ footer {
 
 @media only screen and (max-width: 600px) {
   #alisLogo {
-    width: 205px;
+    width: 305px;
     margin-top: 20px;
     border: 5px solid white;
     border-radius: 5px;
