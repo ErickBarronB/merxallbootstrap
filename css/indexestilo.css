@@ -403,6 +403,12 @@ footer {
   -webkit-animation: entraIzquierda 0.8s normal 0s;
           animation: entraIzquierda 0.8s normal 0s;
 }
+.indexArticulo1Texto p {
+  font-size: 20px;
+}
+.indexArticulo1Texto p a {
+  text-decoration: none;
+}
 
 #imagenIndex {
   margin-left: -12px;

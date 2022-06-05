@@ -451,6 +451,13 @@ footer {
     flex-direction: row;
     align-items: center;
     animation: entraIzquierda 0.8s normal 0s;
+
+    p {
+        font-size: 20px;
+        a {
+            text-decoration: none;
+        }
+    }
 }
 
 
